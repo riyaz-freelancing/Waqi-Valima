@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-navy: #0A1128;
+    --bg-navy-deep: #040813;
+    --bg-emerald: #0B3D2E;
+    --bg-emerald-deep: #06231A;
+    --color-gold: #D4AF37;
+    --color-gold-light: #F5E6A8;
+    --color-gold-dark: #997A25;
+    --color-ivory: #FFF8E7;
+    --color-ivory-muted: #C9BEA4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-navy-deep);
+    color: var(--color-ivory);
+  }
+
+  body {
+    background-color: var(--bg-navy-deep);
+    color: var(--color-ivory);
+    font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: rgba(212, 175, 55, 0.35);
+    color: #FFF8E7;
+  }
+}
+
+/* Royal Gold Metallic Foil Text */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.gold-foil-text {
+  background: linear-gradient(
+    120deg,
+    #A98A45 0%,
+    #D4AF37 25%,
+    #FFF8E7 50%,
+    #D4AF37 75%,
+    #997A25 100%
+  );
+  background-size: 250% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: goldShimmer 7s ease-in-out infinite;
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15), inset 0 0 15px rgba(212, 175, 55, 0.05);
+}
+
+.glass-emerald-card {
+  background: radial-gradient(circle at 50% 0%, rgba(11, 61, 46, 0.75) 0%, rgba(10, 17, 40, 0.85) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  box-shadow: 
+    0 25px 60px -15px rgba(4, 8, 19, 0.9),
+    0 0 35px rgba(212, 175, 55, 0.1),
+    inset 0 1px 1px rgba(255, 248, 231, 0.2);
+}
+
+.glass-navy-card {
+  background: radial-gradient(circle at 50% 0%, rgba(13, 23, 51, 0.85) 0%, rgba(4, 8, 19, 0.92) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  box-shadow: 
+    0 25px 60px -15px rgba(4, 8, 19, 0.95),
+    0 0 30px rgba(212, 175, 55, 0.08),
+    inset 0 1px 1px rgba(255, 248, 231, 0.15);
+}
+
+/* Islamic Geometric Background Pattern */
+.bg-arabesque-pattern {
+  background-color: #040813;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.06) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 0% 0%, rgba(11, 61, 46, 0.3) 2px, transparent 2px);
+  background-size: 36px 36px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040813;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A98A45;
+  border-radius: 9999px;
+  border: 1px solid #040813;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Prevent unwanted canvas touch gestures blocking page scroll on mobile */
+canvas {
+  touch-action: pan-y;
+}

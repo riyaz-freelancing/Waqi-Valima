@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <radialGradient id="favGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#0B3D2E"/>
+      <stop offset="100%" stopColor="#050B18"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFF8E7"/>
+      <stop offset="40%" stopColor="#D4AF37"/>
+      <stop offset="100%" stopColor="#997A25"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#favGlow)" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="50" cy="50" r="44" stroke="#D4AF37" stroke-width="0.75" stroke-dasharray="2 2" opacity="0.6"/>
+  <!-- Islamic Crescent -->
+  <path d="M 58 22 A 28 28 0 1 0 58 78 A 23 23 0 1 1 58 22 Z" fill="url(#goldGrad)" />
+  <!-- 8-pointed star -->
+  <polygon points="66,38 68,43 73,43 69,46 71,51 66,48 62,51 64,46 60,43 65,43" fill="#FFF8E7"/>
+</svg>
