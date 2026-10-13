@@ -7,8 +7,8 @@ export const EventsOverlay = () => {
   const { events } = INVITATION_CONFIG;
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 select-none pointer-events-none relative z-10">
-      <div className="max-w-4xl w-full mx-auto space-y-8 pointer-events-auto">
+    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+      <div className="max-w-4xl w-full mx-auto space-y-5 sm:space-y-6 pointer-events-auto">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}

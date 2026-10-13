@@ -4,7 +4,7 @@ import { INVITATION_CONFIG } from '../../data/invitation';
 
 export const DuaOverlay = () => {
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, filter: 'blur(8px)' }}
         whileInView={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}

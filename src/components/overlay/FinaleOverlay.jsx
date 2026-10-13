@@ -53,8 +53,8 @@ export const FinaleOverlay = ({ onFireworkBurst }) => {
   };
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 select-none pointer-events-none relative z-10">
-      <div className="max-w-2xl w-full mx-auto space-y-8 pointer-events-auto text-center">
+    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+      <div className="max-w-2xl w-full mx-auto space-y-4 sm:space-y-5 pointer-events-auto text-center">
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -135,7 +135,7 @@ export const FinaleOverlay = ({ onFireworkBurst }) => {
         </motion.div>
 
         {/* Footer Credits */}
-        <p className="font-cinzel text-[10px] sm:text-[11px] tracking-widest2 uppercase text-gold-light/60 pt-8">
+        <p className="font-cinzel text-[10px] sm:text-[11px] tracking-widest2 uppercase text-gold-light/60 pt-4">
           Mohammed Waqiullah Khan &amp; Syeda Sara Fatima · October 2026
         </p>
       </div>

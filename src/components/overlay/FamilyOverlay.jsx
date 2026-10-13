@@ -6,15 +6,15 @@ export const FamilyOverlay = () => {
   const { blessings, guardianship, host } = INVITATION_CONFIG.honors;
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center py-20 px-4 sm:px-6 select-none pointer-events-none relative z-10">
-      <div className="max-w-2xl w-full mx-auto space-y-6 pointer-events-auto">
+    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+      <div className="max-w-2xl w-full mx-auto space-y-4 sm:space-y-5 pointer-events-auto">
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 25, filter: 'blur(6px)' }}
           whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.9 }}
-          className="text-center mb-8"
+          className="text-center mb-4 sm:mb-5"
         >
           <span className="font-cinzel text-xs tracking-widest3 uppercase text-gold">
             Elders &amp; Lineage

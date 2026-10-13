@@ -7,7 +7,7 @@ export const HeroOverlay = ({ isGateOpen, onOpenGate }) => {
   const { bismillah, propheticDua } = INVITATION_CONFIG;
 
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-between py-10 px-4 sm:px-6 text-center select-none pointer-events-none relative z-10">
+    <section className="min-h-screen w-full flex flex-col items-center justify-between py-6 sm:py-8 px-4 sm:px-6 text-center select-none pointer-events-none relative z-10">
       {/* 1. Top Header: Bismillah */}
       <motion.div
         initial={{ opacity: 0, y: -20, filter: 'blur(8px)' }}
