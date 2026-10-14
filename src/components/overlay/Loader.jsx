@@ -59,7 +59,7 @@ export const Loader = ({ isLoaded = false }) => {
           </p>
 
           <h2 className="font-cinzel tracking-widest2 text-xs uppercase text-gold-light/80 mb-4">
-            Royal Wedding Invitation
+            Wedding Invitation
           </h2>
 
           {/* Progress Bar & Percentage */}

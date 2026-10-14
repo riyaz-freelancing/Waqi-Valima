@@ -10,8 +10,8 @@ export const INVITATION_CONFIG = {
   // SEO & Headings
   meta: {
     title: "Valima Ceremony | Mohammed Waqiullah Khan & Syeda Sara Fatima",
-    ogTitle: "Royal Wedding Invitation | Waqiullah & Sara",
-    ogDescription: "In the name of Allah. Solicit your gracious presence on the auspicious occasion of the Valima Ceremony. 23 & 25 Oct 2026, Hyderabad.",
+    ogTitle: "Wedding Invitation | Waqiullah & Sara",
+    ogDescription: "In the name of ALLAH the most beneficent & merciful. Solicit your gracious presence on the auspicious occasion of the Valima Ceremony. 23 & 25 Oct 2026, Hyderabad.",
     themeColor: "#0A1128",
     url: typeof window !== 'undefined' ? window.location.href : "https://waqiullah-sara.wedding",
   },
@@ -99,19 +99,19 @@ export const INVITATION_CONFIG = {
       title: "Nikah Ceremony",
       inShaAllah: "In Sha Allah",
       day: "Friday",
-      dateFormatted: "23rd October 2026",
-      hijriDate: "12th Jamadi ul Awwal 1448 H",
-      timing: "NIKAH after Juma · Namaz-e-Juma at 1:30 PM IST",
+      dateFormatted: "23rd Oct. 2026",
+      hijriDate: "(12th Jamadi ul Awwal 1448 H)",
+      timing: "NIKAH: After Juma · Namaz-e-Juma 1:30 pm",
       venueName: "MASJID-E-QUTUB SHAHI (Choti Masjid)",
-      locationShort: "Murad Nagar, Hyderabad",
-      fullAddress: "Masjid-e-Qutub Shahi (Choti Masjid), Murad Nagar, Asif Nagar Road, Hyderabad, Telangana 500028",
+      locationShort: "Murad Nagar, Hyd.",
+      fullAddress: "Masjid-e-Qutub Shahi (Choti Masjid), Murad Nagar, Hyd.",
       mapsUrl: "https://maps.google.com/?q=Masjid-E-Qutub+Shahi+Murad+Nagar+Hyderabad",
       // ISO timestamp for countdown
       isoDateTime: "2026-10-23T13:30:00+05:30",
       calendar: {
         title: "Nikah: Mohammed Waqiullah Khan & Syeda Sara Fatima",
-        description: "Nikah Ceremony after Namaz-e-Juma at Masjid-e-Qutub Shahi (Choti Masjid), Murad Nagar, Hyderabad.",
-        location: "Masjid-e-Qutub Shahi, Murad Nagar, Hyderabad",
+        description: "Nikah Ceremony after Juma at Masjid-e-Qutub Shahi (Choti Masjid), Murad Nagar, Hyd. Namaz-e-Juma 1:30 pm.",
+        location: "Masjid-e-Qutub Shahi, Murad Nagar, Hyd.",
         startDate: "20261023T080000Z", // 1:30 PM IST in UTC
         endDate: "20261023T110000Z",
       },
@@ -122,18 +122,18 @@ export const INVITATION_CONFIG = {
       title: "Valima Ceremony",
       inShaAllah: "In Sha Allah",
       day: "Sunday",
-      dateFormatted: "25th October 2026",
-      hijriDate: "14th Jamadi ul Awwal 1448 Hijri",
-      timing: "DINNER after Namaz-e-Isha (8:30 PM IST)",
+      dateFormatted: "the 25th of October 2026",
+      hijriDate: "(14th Jamadi ul Awwal 1448 Hijri)",
+      timing: "DINNER: After Namaz-e-Isha (8:30 pm)",
       venueName: "PERFECT PALACE",
-      locationShort: "Pillar No. 89, Attapur Road, Ring Road, Hyderabad",
-      fullAddress: "Perfect Palace Function Hall, Pillar No. 89, Attapur Main Rd, Ring Road, Hyderabad, Telangana 500048",
+      locationShort: "Pillar No. 89, Attapur Road, Ring Road, Hyderabad.",
+      fullAddress: "Perfect Palace, Pillar No. 89, Attapur Road, Ring Road, Hyderabad.",
       mapsUrl: "https://maps.google.com/?q=Perfect+Palace+Pillar+89+Attapur+Road+Hyderabad",
       isoDateTime: "2026-10-25T20:30:00+05:30",
       calendar: {
         title: "Valima: Mohammed Waqiullah Khan & Syeda Sara Fatima",
-        description: "Valima Dinner Reception after Namaz-e-Isha at Perfect Palace, Pillar 89, Attapur Road, Hyderabad.",
-        location: "Perfect Palace, Pillar No. 89, Attapur Road, Hyderabad",
+        description: "Valima Dinner after Namaz-e-Isha (8:30 pm) at Perfect Palace, Pillar No. 89, Attapur Road, Ring Road, Hyderabad.",
+        location: "Perfect Palace, Pillar No. 89, Attapur Road, Hyderabad.",
         startDate: "20261025T150000Z", // 8:30 PM IST in UTC
         endDate: "20261025T183000Z",
       },
@@ -162,13 +162,21 @@ export const INVITATION_CONFIG = {
       ),
     shareMessage: () =>
       encodeURIComponent(
-        `✨ *Royal Wedding Invitation* ✨\n\n` +
-        `In the name of ALLAH the most beneficent & merciful.\n\n` +
-        `You are cordially invited to celebrate the Nikah & Valima Ceremony of:\n` +
-        `*Mohammed Waqiullah Khan* & *Syeda Sara Fatima*\n\n` +
-        `📅 *Nikah:* Friday, 23rd Oct 2026 (Masjid-e-Qutub Shahi, Murad Nagar)\n` +
-        `📅 *Valima:* Sunday, 25th Oct 2026 (Perfect Palace, Pillar 89, Attapur)\n\n` +
-        `View the 3D cinematic royal invitation here:\n` +
+        `*Wedding Invitation*\n\n` +
+        `In the name of ALLAH the most beneficent & merciful\n\n` +
+        `Solicit your gracious presence on the auspicious occasion of the Valima Ceremony of our son:\n` +
+        `*Mohammed Waqiullah Khan* (B.Com., M.B.A.)\n` +
+        `with\n` +
+        `*Syeda Sara Fatima* (M.A., B.Ed.)\n` +
+        `D/O. LATE HZ. ALHAJ SYED AHMED ALI SHAH DHOTI\n\n` +
+        `📅 *Nikah:* Friday, 23rd Oct. 2026 (12th Jamadi ul Awwal 1448 H)\n` +
+        `📍 Masjid-e-Qutub Shahi (Choti Masjid), Murad Nagar, Hyd.\n` +
+        `⏰ NIKAH: After Juma (Namaz-e-Juma 1:30 pm)\n\n` +
+        `📅 *Valima:* Sunday, the 25th of October 2026 (14th Jamadi ul Awwal 1448 Hijri)\n` +
+        `📍 Perfect Palace, Pillar No. 89, Attapur Road, Ring Road, Hyderabad.\n` +
+        `⏰ DINNER: After Namaz-e-Isha (8:30 pm)\n\n` +
+        `With best compliment From: Near & Dear\n\n` +
+        `View the wedding invitation here:\n` +
         `${typeof window !== 'undefined' ? window.location.href : 'https://waqiullah-sara.wedding'}`
       ),
   },
@@ -182,8 +190,8 @@ export const INVITATION_CONFIG = {
     { id: "events", label: "Auspicious Events", shortLabel: "Events", subtitle: "Nikah & Valima" },
     { id: "countdown", label: "Countdown", shortLabel: "Timer", subtitle: "Precious Moments" },
     { id: "venue", label: "Grand Venue", shortLabel: "Venue", subtitle: "Perfect Palace" },
-    { id: "dua", label: "Prophetic Dua", shortLabel: "Dua", subtitle: "Blessings" },
-    { id: "finale", label: "Compliments & RSVP", shortLabel: "RSVP", subtitle: "Celebration" },
+    { id: "dua", label: "Blessings", shortLabel: "Blessings", subtitle: "Card Invocation" },
+    { id: "finale", label: "Compliments & Wishes", shortLabel: "Wishes", subtitle: "Celebration" },
   ],
 };
 
@@ -195,7 +203,7 @@ export function downloadIcsFile(event) {
   const icsContent = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Waqiullah Sara Royal Wedding//EN",
+    "PRODID:-//Waqiullah Sara Wedding//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",

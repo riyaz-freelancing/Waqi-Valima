@@ -54,10 +54,10 @@ export const Names3D = ({ position = [0, 2.5, -8.2] }) => {
       {/* Groom: Mohammed Waqiullah Khan */}
       <group position={[0, 1.0, 0]}>
         <Text
-          fontSize={0.62}
-          font="https://fonts.gstatic.com/s/cormorantgaramond/v19/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYpHtK.woff"
+          fontSize={0.78}
+          font="https://fonts.gstatic.com/s/greatvibes/v18/RWmMoKWR9v4ksMfaWd_JN-XCg6KV.woff"
           color="#FFF8E7"
-          letterSpacing={0.06}
+          letterSpacing={0.02}
           anchorX="center"
           anchorY="middle"
         >
@@ -84,7 +84,8 @@ export const Names3D = ({ position = [0, 2.5, -8.2] }) => {
       {/* "With" script joiner */}
       <group position={[0, 0.05, 0]}>
         <Text
-          fontSize={0.38}
+          fontSize={0.42}
+          font="https://fonts.gstatic.com/s/greatvibes/v18/RWmMoKWR9v4ksMfaWd_JN-XCg6KV.woff"
           color="#F5E6A8"
           anchorX="center"
           anchorY="middle"
@@ -96,10 +97,10 @@ export const Names3D = ({ position = [0, 2.5, -8.2] }) => {
       {/* Bride: Syeda Sara Fatima */}
       <group position={[0, -0.85, 0]}>
         <Text
-          fontSize={0.62}
-          font="https://fonts.gstatic.com/s/cormorantgaramond/v19/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYpHtK.woff"
+          fontSize={0.78}
+          font="https://fonts.gstatic.com/s/greatvibes/v18/RWmMoKWR9v4ksMfaWd_JN-XCg6KV.woff"
           color="#FFF8E7"
-          letterSpacing={0.06}
+          letterSpacing={0.02}
           anchorX="center"
           anchorY="middle"
         >

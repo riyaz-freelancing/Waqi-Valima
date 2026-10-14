@@ -4,12 +4,12 @@ import { INVITATION_CONFIG } from '../../data/invitation';
 
 export const TitleOverlay = () => {
   return (
-    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 text-center select-none pointer-events-none relative z-10 gap-5 sm:gap-6">
+    <section className="w-full flex flex-col items-center justify-start pt-2 sm:pt-4 pb-12 sm:pb-16 px-4 sm:px-6 text-center select-none pointer-events-none relative z-10 gap-4 sm:gap-5">
       {/* Top Framing Announcement */}
       <motion.div
         initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
         whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 0.9 }}
         className="max-w-xl mx-auto pointer-events-auto"
       >
@@ -31,7 +31,7 @@ export const TitleOverlay = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1.0, delay: 0.15 }}
         className="max-w-2xl w-full mx-auto pointer-events-auto"
       >
@@ -41,7 +41,7 @@ export const TitleOverlay = () => {
 
           {/* Groom Details */}
           <div className="space-y-1">
-            <h2 className="font-cormorant text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-ivory tracking-wide leading-tight">
+            <h2 className="font-great-vibes text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-normal text-ivory tracking-wide leading-tight">
               {INVITATION_CONFIG.groom.fullName}
             </h2>
             <p className="font-cinzel text-xs sm:text-sm text-gold tracking-widest2">
@@ -58,7 +58,7 @@ export const TitleOverlay = () => {
 
           {/* Bride Details */}
           <div className="space-y-1">
-            <h2 className="font-cormorant text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-ivory tracking-wide leading-tight">
+            <h2 className="font-great-vibes text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-normal text-ivory tracking-wide leading-tight">
               {INVITATION_CONFIG.bride.fullName}
             </h2>
             <p className="font-cinzel text-xs sm:text-sm text-gold tracking-widest2">
@@ -72,7 +72,7 @@ export const TitleOverlay = () => {
           {/* Ceremony Date & Venue Summary Chip */}
           <div className="mt-5 pt-4 border-t border-gold/20 flex flex-wrap items-center justify-center gap-2 text-xs font-cinzel text-gold-light">
             <span className="px-3.5 py-1 rounded-full bg-navy-deep/80 border border-gold/30">
-              Sunday, 25th October 2026
+              Sunday, the 25th of October 2026
             </span>
             <span className="px-3.5 py-1 rounded-full bg-navy-deep/80 border border-gold/30">
               Perfect Palace · Hyderabad
@@ -85,7 +85,7 @@ export const TitleOverlay = () => {
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 0.8, delay: 0.25 }}
         className="max-w-md mx-auto pointer-events-auto"
       >

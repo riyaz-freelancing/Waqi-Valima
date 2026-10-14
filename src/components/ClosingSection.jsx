@@ -240,7 +240,7 @@ export const ClosingSection = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="my-2 select-none"
         >
-          <span className="font-cormorant italic text-4xl xs:text-5xl sm:text-6xl md:text-7xl champagne-foil-text inline-block">
+          <span className="font-great-vibes text-5xl xs:text-6xl sm:text-7xl md:text-8xl champagne-foil-text inline-block">
             Waqiullah &amp; Sara
           </span>
         </motion.div>

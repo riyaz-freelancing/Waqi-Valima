@@ -7,12 +7,12 @@ export const CoupleOverlay = () => {
   const { groom, bride } = INVITATION_CONFIG;
 
   return (
-    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10 gap-5 sm:gap-6">
+    <section className="w-full flex flex-col items-center justify-start py-8 sm:py-12 px-4 sm:px-6 select-none pointer-events-none relative z-10 gap-4 sm:gap-5">
       {/* Top Banner */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 0.8 }}
         className="text-center"
       >
@@ -33,7 +33,7 @@ export const CoupleOverlay = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 0.8 }}
         className="flex items-center justify-center gap-4 my-1"
       >
@@ -48,7 +48,7 @@ export const CoupleOverlay = () => {
       <motion.div
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 0.9 }}
         className="max-w-4xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pointer-events-auto"
       >
@@ -57,7 +57,7 @@ export const CoupleOverlay = () => {
           <span className="inline-block px-3 py-1 rounded-full text-[10px] tracking-widest2 uppercase font-cinzel text-gold bg-navy-deep/80 border border-gold/30 mb-2">
             Groom
           </span>
-          <h3 className="font-cormorant text-2xl sm:text-3xl font-semibold text-ivory">
+          <h3 className="font-great-vibes text-3xl sm:text-4xl md:text-5xl font-normal text-ivory tracking-wide leading-snug">
             {groom.fullName}
           </h3>
           <p className="font-cinzel text-xs tracking-widest1 text-gold-light mt-1">
@@ -70,7 +70,7 @@ export const CoupleOverlay = () => {
           <span className="inline-block px-3 py-1 rounded-full text-[10px] tracking-widest2 uppercase font-cinzel text-gold bg-navy-deep/80 border border-gold/30 mb-2">
             Bride
           </span>
-          <h3 className="font-cormorant text-2xl sm:text-3xl font-semibold text-ivory">
+          <h3 className="font-great-vibes text-3xl sm:text-4xl md:text-5xl font-normal text-ivory tracking-wide leading-snug">
             {bride.fullName}
           </h3>
           <p className="font-cinzel text-xs tracking-widest1 text-gold-light mt-1">

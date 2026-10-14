@@ -122,8 +122,8 @@ const SingleArchFrame = ({
         </Text>
         <Text
           position={[0, -0.28, 0]}
-          fontSize={0.24}
-          font="https://fonts.gstatic.com/s/cormorantgaramond/v19/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYpHtK.woff"
+          fontSize={0.34}
+          font="https://fonts.gstatic.com/s/greatvibes/v18/RWmMoKWR9v4ksMfaWd_JN-XCg6KV.woff"
           color="#FFF8E7"
           anchorX="center"
           anchorY="middle"

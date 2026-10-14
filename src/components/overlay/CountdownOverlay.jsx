@@ -54,13 +54,13 @@ export const CountdownOverlay = () => {
   ];
 
   return (
-    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+    <section className="w-full flex flex-col items-center justify-start py-8 sm:py-12 px-4 sm:px-6 select-none pointer-events-none relative z-10">
       <div className="max-w-2xl w-full mx-auto space-y-5 sm:space-y-6 pointer-events-auto text-center">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.8 }}
         >
           <span className="font-cinzel text-xs tracking-widest3 uppercase text-gold">
@@ -113,7 +113,7 @@ export const CountdownOverlay = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.8 }}
             className="grid grid-cols-4 gap-2.5 sm:gap-4 max-w-xl mx-auto"
           >

@@ -13,21 +13,13 @@ export const Fallback2D = () => {
     <div className="min-h-screen bg-arabesque-pattern text-ivory py-16 px-4 sm:px-6">
       <div className="max-w-3xl mx-auto space-y-16 text-center">
         {/* Header */}
-        <header className="space-y-4">
+        <header className="space-y-3">
           <p className="font-amiri text-3xl sm:text-4xl text-gold" dir="rtl">
             {bismillah.arabic}
           </p>
-          <p className="font-cormorant italic text-sm text-ivory/80">
+          <p className="font-cormorant italic text-sm sm:text-base text-ivory/80">
             {bismillah.english}
           </p>
-          <div className="py-4">
-            <span className="font-amiri text-2xl text-ivory" dir="rtl">
-              {quranVerse.shortArabic}
-            </span>
-            <p className="font-cormorant italic text-gold-light mt-1">
-              “{quranVerse.english}”
-            </p>
-          </div>
         </header>
 
         {/* Title */}
@@ -43,14 +35,14 @@ export const Fallback2D = () => {
           </p>
 
           <div className="my-6 space-y-2">
-            <h2 className="font-cormorant text-3xl sm:text-4xl font-bold text-ivory">
+            <h2 className="font-great-vibes text-4xl sm:text-5xl font-normal text-ivory tracking-wide leading-snug">
               {groom.fullName}
             </h2>
             <p className="font-cinzel text-xs text-gold tracking-widest1">
               {groom.degrees}
             </p>
-            <p className="font-cormorant italic text-lg text-gold-light">with</p>
-            <h2 className="font-cormorant text-3xl sm:text-4xl font-bold text-ivory">
+            <p className="font-great-vibes text-2xl text-gold-light my-2">with</p>
+            <h2 className="font-great-vibes text-4xl sm:text-5xl font-normal text-ivory tracking-wide leading-snug">
               {bride.fullName}
             </h2>
             <p className="font-cinzel text-xs text-gold tracking-widest1">
@@ -151,24 +143,17 @@ export const Fallback2D = () => {
           </div>
         </section>
 
-        {/* Dua */}
-        <section className="glass-navy-card p-8 rounded-3xl">
-          <p className="font-amiri text-2xl text-gold" dir="rtl">
-            {propheticDua.arabic}
-          </p>
-          <p className="font-cormorant italic text-sm text-gold-light mt-2">
-            {propheticDua.transliteration}
-          </p>
-          <p className="font-cormorant text-base text-ivory mt-2">
-            {propheticDua.translation}
-          </p>
-        </section>
+        {/* Compliments & Share */}
+        <footer className="space-y-6 pt-6">
+          <div className="glass-navy-card p-6 rounded-2xl max-w-md mx-auto text-center">
+            <p className="font-serif uppercase tracking-widest2 text-xs text-gold-light font-medium">
+              With best compliment From:
+            </p>
+            <p className="font-serif italic text-2xl text-ivory mt-1">
+              Near &amp; Dear
+            </p>
+          </div>
 
-        {/* Share & Compliments */}
-        <footer className="space-y-4 pt-6">
-          <p className="font-cinzel text-sm uppercase text-gold tracking-widest2">
-            {honors.compliments}
-          </p>
           <button
             onClick={handleShare}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-cinzel text-xs uppercase tracking-wider font-bold shadow-lg"

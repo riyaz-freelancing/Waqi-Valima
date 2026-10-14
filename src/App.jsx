@@ -21,9 +21,9 @@ export function App() {
   const [hasWebGL, setHasWebGL] = useState(true);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
-  // Gate Interaction State
-  const [isGateOpen, setIsGateOpen] = useState(false);
-  const [gateOpenTransition, setGateOpenTransition] = useState(0);
+  // Gate Interaction State (Open by default - no button blocking entrance)
+  const [isGateOpen, setIsGateOpen] = useState(true);
+  const [gateOpenTransition, setGateOpenTransition] = useState(1);
 
   // Scroll Progress (0.0 to 1.0)
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -72,8 +72,17 @@ export function App() {
       const progress = totalScroll > 0 ? Math.max(0, Math.min(1, window.scrollY / totalScroll)) : 0;
       setScrollProgress(progress);
 
-      const sceneIndex = Math.min(8, Math.floor(progress * 8.99));
-      setActiveSceneIndex(sceneIndex);
+      // Determine active scene based on actual DOM section positions
+      let currentIdx = 0;
+      const scrollYCenter = window.scrollY + window.innerHeight * 0.35;
+      for (let i = sceneRefs.current.length - 1; i >= 0; i--) {
+        const el = sceneRefs.current[i];
+        if (el && el.offsetTop <= scrollYCenter) {
+          currentIdx = i;
+          break;
+        }
+      }
+      setActiveSceneIndex(currentIdx);
     };
 
     lenis.on('scroll', handleScroll);
@@ -175,7 +184,7 @@ export function App() {
       <main className="relative z-10 w-full">
         {/* Scene 1: Hero & Grand Gate Intro */}
         <div ref={(el) => (sceneRefs.current[0] = el)} id="scene-hero">
-          <HeroOverlay isGateOpen={isGateOpen} onOpenGate={handleOpenGate} />
+          <HeroOverlay />
         </div>
 
         {/* Scene 2: Title & 3D Names */}

@@ -6,13 +6,13 @@ export const FamilyOverlay = () => {
   const { blessings, guardianship, host } = INVITATION_CONFIG.honors;
 
   return (
-    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+    <section className="w-full flex flex-col items-center justify-start py-8 sm:py-12 px-4 sm:px-6 select-none pointer-events-none relative z-10">
       <div className="max-w-2xl w-full mx-auto space-y-4 sm:space-y-5 pointer-events-auto">
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 25, filter: 'blur(6px)' }}
           whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.9 }}
           className="text-center mb-4 sm:mb-5"
         >
@@ -33,7 +33,7 @@ export const FamilyOverlay = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.9, delay: 0.1 }}
           className="glass-emerald-card p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center relative overflow-hidden"
         >
@@ -52,7 +52,7 @@ export const FamilyOverlay = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.9, delay: 0.2 }}
           className="glass-navy-card p-5 sm:p-6 rounded-2xl text-center"
         >
@@ -68,14 +68,14 @@ export const FamilyOverlay = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.9, delay: 0.3 }}
           className="glass-emerald-card p-6 sm:p-8 rounded-2xl sm:rounded-3xl text-center"
         >
-          <p className="font-cormorant italic text-sm text-gold-light mb-1">
+          <p className="font-great-vibes text-xl sm:text-2xl text-gold-light mb-1">
             {host.salutation}
           </p>
-          <h3 className="font-cormorant text-2xl sm:text-3xl md:text-4xl font-semibold text-ivory">
+          <h3 className="font-great-vibes text-2xl sm:text-3xl md:text-4xl font-normal text-ivory">
             {host.name}
           </h3>
           <p className="font-cormorant italic text-xs sm:text-sm text-gold mt-1">

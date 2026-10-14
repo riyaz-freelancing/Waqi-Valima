@@ -10,13 +10,13 @@ export const VenueOverlay = () => {
   const valimaVenue = INVITATION_CONFIG.events[1];
 
   return (
-    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+    <section className="w-full flex flex-col items-center justify-start py-8 sm:py-12 px-4 sm:px-6 select-none pointer-events-none relative z-10">
       <div className="max-w-4xl w-full mx-auto space-y-5 sm:space-y-6 pointer-events-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.8 }}
           className="text-center"
         >
@@ -24,7 +24,7 @@ export const VenueOverlay = () => {
             Locations &amp; Directions
           </span>
           <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl text-ivory mt-1">
-            The Royal Venues
+            The Venues
           </h2>
           <div className="flex items-center justify-center gap-2 mt-2 opacity-70">
             <div className="h-[1px] w-16 bg-gradient-to-r from-transparent to-gold" />
@@ -39,7 +39,7 @@ export const VenueOverlay = () => {
           <motion.div
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.9, delay: 0.1 }}
             className="glass-emerald-card p-6 sm:p-8 rounded-3xl flex flex-col justify-between border border-gold/40 shadow-luxury-card relative overflow-hidden"
           >
@@ -56,11 +56,8 @@ export const VenueOverlay = () => {
               <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-ivory tracking-wide">
                 {valimaVenue.venueName}
               </h3>
-              <p className="font-jost text-sm text-gold-light mt-1 font-medium">
+              <p className="font-jost text-sm text-gold-light mt-2 font-medium leading-relaxed">
                 {valimaVenue.locationShort}
-              </p>
-              <p className="font-jost text-xs text-ivory/70 mt-2 leading-relaxed">
-                {valimaVenue.fullAddress}
               </p>
             </div>
 
@@ -90,7 +87,7 @@ export const VenueOverlay = () => {
           <motion.div
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.9, delay: 0.2 }}
             className="glass-navy-card p-6 sm:p-8 rounded-3xl flex flex-col justify-between border border-gold/30 shadow-luxury-card relative overflow-hidden"
           >
@@ -107,11 +104,8 @@ export const VenueOverlay = () => {
               <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-ivory tracking-wide">
                 {nikahVenue.venueName}
               </h3>
-              <p className="font-jost text-sm text-gold-light mt-1 font-medium">
+              <p className="font-jost text-sm text-gold-light mt-2 font-medium leading-relaxed">
                 {nikahVenue.locationShort}
-              </p>
-              <p className="font-jost text-xs text-ivory/70 mt-2 leading-relaxed">
-                {nikahVenue.fullAddress}
               </p>
             </div>
 

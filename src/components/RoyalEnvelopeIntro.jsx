@@ -53,7 +53,7 @@ export const RoyalEnvelopeIntro = ({ onOpen }) => {
             {/* Header Badge & Bismillah */}
             <div className="mb-2">
               <Badge variant="champagne" className="text-[10px] tracking-widest2">
-                Royal Wedding Invitation
+                Wedding Invitation
               </Badge>
             </div>
 
@@ -75,7 +75,7 @@ export const RoyalEnvelopeIntro = ({ onOpen }) => {
               >
                 <div className="wax-seal-luxury w-24 h-24 xs:w-28 xs:h-28 rounded-full flex flex-col items-center justify-center p-2.5 relative transition-transform duration-500 group-hover:rotate-3">
                   <span className="text-[8px] xs:text-[9px] uppercase tracking-widest2 text-champagne-muted font-cinzel">
-                    ROYAL UNION
+                    BLESSED UNION
                   </span>
                   <span className="font-cormorant text-2xl xs:text-3xl font-medium text-ivory tracking-wider my-0.5">
                     W &amp; S

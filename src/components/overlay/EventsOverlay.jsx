@@ -7,13 +7,13 @@ export const EventsOverlay = () => {
   const { events } = INVITATION_CONFIG;
 
   return (
-    <section className="min-h-[85vh] sm:min-h-screen w-full flex flex-col items-center justify-center py-10 sm:py-14 px-4 sm:px-6 select-none pointer-events-none relative z-10">
+    <section className="w-full flex flex-col items-center justify-start py-8 sm:py-12 px-4 sm:px-6 select-none pointer-events-none relative z-10">
       <div className="max-w-4xl w-full mx-auto space-y-5 sm:space-y-6 pointer-events-auto">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.8 }}
           className="text-center"
         >
@@ -37,14 +37,14 @@ export const EventsOverlay = () => {
               key={evt.id}
               initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: false, amount: 0.1 }}
               transition={{ duration: 0.9, delay: idx * 0.15 }}
               className="glass-emerald-card p-6 sm:p-8 rounded-3xl flex flex-col justify-between border border-gold/30 hover:border-gold/50 transition-all duration-300 shadow-luxury-card relative overflow-hidden group"
             >
               {/* Top Pill & Hijri Date */}
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="px-3.5 py-1 rounded-full text-[11px] font-cinzel uppercase tracking-widest2 bg-navy-deep/80 text-gold border border-gold/40">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="font-great-vibes text-2xl sm:text-3xl text-gold tracking-wide">
                     {evt.type}
                   </span>
                   <span className="font-cormorant italic text-xs sm:text-sm text-gold-light">
